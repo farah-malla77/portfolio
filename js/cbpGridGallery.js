@@ -99,11 +99,11 @@
 		var self = this;
 
 		// open the slideshow when clicking on the main grid items
-		this.gridItems.forEach( function( item, idx ) {
-			item.addEventListener( 'click', function() {
-				self._openSlideshow( idx );
-			} );
-		} );
+		// this.gridItems.forEach( function( item, idx ) {
+		// 	item.addEventListener( 'click', function() {
+		// 		self._openSlideshow( idx );
+		// 	} );
+		// } );
 
 		// slideshow controls
 		this.ctrlPrev.addEventListener( 'click', function() { self._navigate( 'prev' ); } );

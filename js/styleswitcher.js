@@ -122,7 +122,7 @@ $(function () {
 
 	// DARK OR LIGHT
 	var is_dark = readCookie('is_light');
-	if (is_boxed == 'true') {
+	if (is_dark == 'true') {
 		jQuery('light').removeClass('light');
 		jQuery('light').addClass('light');
 		jQuery("#is_light").trigger('click');

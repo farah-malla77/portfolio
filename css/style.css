@@ -90,7 +90,7 @@ hr.separator {
 
 .custom-title {
   padding-bottom: 22px;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 /*** Light Body ***/
@@ -784,7 +784,13 @@ body.light hr.separator {
 }
 
 /* Grid */
-
+.carousel-item img{
+  height: 450px;
+}
+.portfolio_img{
+  width: 340px;
+  height: 209.69px;
+}
 .portfolio .grid-gallery ul {
   list-style: none;
   margin: 0;
@@ -811,10 +817,11 @@ body.light hr.separator {
 }
 
 .portfolio .grid li {
-  width: 33.333333%;
+  width: 32.333333%;
   float: left;
   cursor: pointer;
   padding: 15px;
+  box-shadow: 1px 1px 4px #5a53532e;
 }
 
 .portfolio .grid figure {
@@ -1007,13 +1014,14 @@ body.light hr.separator {
   padding: 10px 0;
   margin: 0;
 }
-
+.carousel-indicators li{
+  background-color: magenta !important;
+}
 .portfolio .slideshow .carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   margin: 0 7px;
-  background-color: #fff;
   opacity: 1;
 }
 
@@ -1789,5 +1797,82 @@ body.light hr.separator {
 
   .separator.mt-1 {
     margin-top: 35px !important;
+  }
+}
+/* Mobile Image */
+.main-img-mobile {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Description & Details */
+.with-margin {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.open-sans-font {
+  font-size: 16px;
+  color: #555;
+}
+
+.fw-bold {
+  font-weight: 700;
+  color: #222;
+}
+.details-para, .techno-para{
+  font-size: 15px;
+}
+/* Values & Links */
+.value {
+  font-size: 16px;
+  color: #444;
+}
+
+.value a {
+  margin-left: 8px;
+  font-size: 16px;
+  color: #007bff;
+}
+
+.value a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+      padding: 40px 10px;
+  }
+
+  .custom-title {
+      font-size: 24px;
+  }
+
+  .with-margin {
+      padding: 15px;
+  }
+}
+
+/* Separator */
+.separator {
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
   }
 }

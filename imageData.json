@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Form Builder",
+        "imageUrl": "images/form-builder-logo.png",
+        "description": "Form Builder is a platform designed for creating forms and surveys with ease and speed, similar to Google Forms. It offers users a variety of tools to create customized forms that meet their specific needs, whether for surveys, data collection, or questionnaires. Users can add different types of questions, such as short and long text responses, numerical answers, multiple-choice questions, and tables. Once the form is completed, it can be easily shared with others to collect responses and analyze the data effortlessly. The platform features a simple and user-friendly interface, ensuring a smooth and seamless experience for all users in creating and distributing forms.",
+        "images": [
+            "images/form-builder1.png",
+            "images/form-builder2.png",
+            "images/form-builder3.png"
+        ],
+        "technical": ["Vue3 Easy Data Table", "i18n", "Vue3 Signature Pad", "Grid Stack"],
+        "link": "https://formbuilder.rewardszone.net/"
+    },
+    {
+        "id": 2,
+        "name": "Image 2",
+        "imageUrl": "images/project-2.jpg",
+        "description": "This is the description for Image 2.",
+        "images": [
+            "images/project-2.jpg",
+            "images/project-3.jpg",
+            "images/project-1.jpg"
+        ],
+        "technical": ["React", "Node.js"],
+        "tools": ["Figma", "Postman"]
+    },
+    {
+        "id": 3,
+        "name": "Image 3",
+        "imageUrl": "images/project-3.jpg",
+        "description": "This is the description for Image 3.",
+        "images": [
+            "images/project-3.jpg",
+            "images/project-1.jpg",
+            "images/project-2.jpg"
+        ],
+        "technical": ["Angular", "TypeScript"],
+        "tools": ["Chrome DevTools", "Webpack"]
+    }
+]
