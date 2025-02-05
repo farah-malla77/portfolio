@@ -36,7 +36,7 @@
                     <h2>Home</h2>
                 </a>
             </li>
-            <li class="icon-box active">
+            <li class="icon-box">
                 <i class="fa fa-user"></i>
                 <a href="about.html">
                     <h2>About</h2>
@@ -48,13 +48,6 @@
                     <h2>Portfolio</h2>
                 </a>
             </li>
-            <li class="icon-box">
-                <i class="fa fa-envelope-open"></i>
-                <a href="contact.html">
-                    <h2>Contact</h2>
-                </a>
-            </li>
-
         </ul>
         <!-- Fixed Navigation Ends -->
         <!-- Mobile Menu Starts -->
@@ -68,8 +61,6 @@
                     <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
                     <li class="active"><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
                     <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                    <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -93,7 +84,7 @@
                 </div>
                 <div class="col-12 col-lg-5 col-xl-8">
                     <div class="row">
-                        <div class="col-12" style="box-shadow: 0px 0px 8px 0px #b3a8a880;">
+                        <div class="col-12 p-0" style="box-shadow: 0px 0px 8px 0px #b3a8a880;">
                             <section class="slideshow">
                                 <!-- Main Project Content Starts -->
                                 <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel"
@@ -167,8 +158,16 @@
                         const carouselItem = document.createElement('div');
                         carouselItem.classList.add('carousel-item');
                         if (index === 0) carouselItem.classList.add('active');
-                        carouselItem.innerHTML = `<img src="${img}" alt="slide ${index + 1}">`;
-                        carouselInner.appendChild(carouselItem);
+                        if (img.endsWith('.mp4')) {
+                            carouselItem.innerHTML = `
+                                <video controls style="width: 100%; height: auto;">
+                                    <source src="${img}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>`;
+                        } else {
+                            carouselItem.innerHTML = `<img src="${img}" alt="slide ${index + 1}" style="width: 100%; height: auto;">`;
+                        }                       
+                 carouselInner.appendChild(carouselItem);
 
                         // Add carousel indicator
                         const indicator = document.createElement('li');

@@ -548,7 +548,7 @@ body.light hr.separator {
 }
 
 .home .bg {
-  background-image: url(../images/farah\ malla.png);
+  background-image: url(../images/farah-malla.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -620,7 +620,7 @@ body.light hr.separator {
   font-size: 19px;
 }
 .icon_effect:hover{
-  color: blue;
+  color: magenta;
   cursor: pointer;
 }
 .icon-link{
@@ -785,11 +785,13 @@ body.light hr.separator {
 
 /* Grid */
 .carousel-item img{
-  height: 450px;
+  height: 450px !important;
+  width: unset !important;
 }
 .portfolio_img{
   width: 340px;
   height: 209.69px;
+  object-fit: contain;
 }
 .portfolio .grid-gallery ul {
   list-style: none;
@@ -1875,4 +1877,8 @@ body.light hr.separator {
       opacity: 1;
       transform: translateY(0);
   }
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+  background: antiquewhite;
+  text-align: center;
 }

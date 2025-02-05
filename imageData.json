@@ -14,28 +14,65 @@
     },
     {
         "id": 2,
-        "name": "Image 2",
-        "imageUrl": "images/project-2.jpg",
-        "description": "This is the description for Image 2.",
+        "name": "Kimo Bot",
+        "imageUrl": "images/kimo-bot-logo.png",
+        "description": "Kimo Bot offers an engaging game with a three-reel slot machine and exciting missions to collect coins to advance through different levels. players can complete daily tasks and special missions to boost their earnings. The game offers a dynamic leaderboard, allowing you to compete with friends and other players globally.",
         "images": [
-            "images/project-2.jpg",
-            "images/project-3.jpg",
-            "images/project-1.jpg"
+            "images/kimo-bot1.png",
+            "images/kimo-bot2.png",
+            "images/kimo-bot3.png"
         ],
-        "technical": ["React", "Node.js"],
-        "tools": ["Figma", "Postman"]
+        "technical": ["Telegram Web App."],
+        "link": ["https://t.me/KimoTheTravelerBot/app?startapp=Y9QPOA"]
     },
     {
         "id": 3,
-        "name": "Image 3",
-        "imageUrl": "images/project-3.jpg",
-        "description": "This is the description for Image 3.",
+        "name": "Levant Light",
+        "imageUrl": "images/levant-logo.png",
+        "description": "Levant Light is a project developed to showcase a wide range of lamp products and their categories in a user-friendly manner. The Levant Light website features a clean, responsive design that effectively presents various lighting solutions. As the front-end developer, I ensured the platform offers seamless navigation, interactive elements, and an intuitive user experience. Additionally, the website is optimized for SEO, enhancing its visibility and ranking in search results.",
         "images": [
-            "images/project-3.jpg",
-            "images/project-1.jpg",
-            "images/project-2.jpg"
+            "images/levant1.png",
+            "images/levant2.png",
+            "images/levant3.png"
         ],
-        "technical": ["Angular", "TypeScript"],
-        "tools": ["Chrome DevTools", "Webpack"]
+        "technical": ["Nuxt.JS", "Pinia", "Flipbook Vue"],
+        "link": ["https://www.levantlight.com/"]
+    },
+    {
+        "id": 4,
+        "name": "Lens Go",
+        "imageUrl": "images/lens-go-logo.png",
+        "description": "LensGo is designed to accommodate services in everything related to photography in the Emirates. This application has many features so that the users can get these services using the website.",
+        "images": [
+            "images/lens-go1.png",
+            "images/lens-go2.png",
+            "images/lens-go3.png"
+        ],
+        "technical": ["Nuxt.JS", "Pinia", "Google Maps", "Stripe"],
+        "link": ["https://lensgo.io/"]
+    },
+    {
+        "id": 5,
+        "name": "Zounder",
+        "imageUrl": "images/zounder-logo.png",
+        "description": "designed a login interface for German website with attractive animations.",
+        "images": [
+            "images/zounder1.png",
+            "images/video.mp4"
+        ],
+        "technical": ["Anim.js"],
+        "link": ["https://zoundr.one/"]
+    },
+    {
+        "id": 6,
+        "name": "Alkhuyol",
+        "imageUrl": "images/alkhuyol-logo.jpg",
+        "description": "Alkhuyol is a website for company in Erbil which provides road print advertising and shows the advertisement on map.",
+        "images": [
+            "images/alkhuyol1.png",
+            "images/alkhuyol2.png"
+        ],
+        "technical": ["Anim.js"],
+        "link": ["https://alkhuyol.com/"]
     }
 ]
