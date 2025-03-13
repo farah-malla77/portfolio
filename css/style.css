@@ -1882,3 +1882,8 @@ body.light hr.separator {
   background: antiquewhite;
   text-align: center;
 }
+@media (max-width: 425px) {
+  .small-font-square{
+    font-size: 12px;
+  }
+}
