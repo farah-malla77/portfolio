@@ -784,10 +784,20 @@ body.light hr.separator {
 }
 
 /* Grid */
+@media only screen and (min-width: 426px) {
+  .carousel-item img{
+    height: 450px !important;
+    width: unset !important;
+  }
+}
 .carousel-item img{
+  /* height: 450px !important; */
+  height: 100% !important;
+}
+/* .carousel-item img{
   height: 450px !important;
   width: unset !important;
-}
+} */
 .portfolio_img{
   width: 340px;
   height: 209.69px;
@@ -1839,6 +1849,9 @@ body.light hr.separator {
   margin-left: 8px;
   font-size: 16px;
   color: #007bff;
+  max-width: 200px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .value a:hover {

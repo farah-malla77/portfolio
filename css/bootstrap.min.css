@@ -7034,8 +7034,14 @@ a.close.disabled {
     backface-visibility: hidden;
     transition: -webkit-transform .6s ease-in-out;
     transition: transform .6s ease-in-out;
-    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+    height: 450px !important;
 }
+@media (max-width: 425px) {
+    .carousel-item  {
+      height: 225px !important;
+    }
+  }
 
 @media (prefers-reduced-motion:reduce) {
     .carousel-item {
